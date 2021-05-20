@@ -71,15 +71,15 @@ class Login extends Component {
                 name="password"
                 onChange={this.inputHandler}
               />
-              <Link to="/main">
-                <button
-                  className="loginBtn"
-                  type="button"
-                  disabled={!(emailValid && passwordValid)}
-                >
-                  로그인
-                </button>
-              </Link>
+              {/* <Link to="/main"> */}
+              <button
+                className="loginBtn"
+                type="submit"
+                disabled={!(emailValid && passwordValid)}
+              >
+                로그인
+              </button>
+              {/* </Link> */}
             </form>
             <div className="orWrap">
               <span className="or">또는</span>
